@@ -16,7 +16,7 @@ public class GeoRunner {
     @Parameter(names = "-url", description = "Remote JSON File")
     String inputUrl;
 
-    @Parameter(names = "-f", description = "Output file to write the results to")
+    @Parameter(names = "-f", description = "Output file to write the results to. Optional")
     String outFile = null;
 
     @Parameter(names = "-help", help = true)
