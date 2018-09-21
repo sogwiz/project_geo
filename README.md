@@ -26,6 +26,7 @@ Parameter | Purpose
 * if the milliseconds portion of the timestamp string are fewer than 3 digits, then the output will look slightly different. Please see example below
 
 `2018-09-19T00:17:*38*Z | 220km NW of Saumlaki, Indonesia | Magnitude: 4.2`
+
 `2018-09-19T00:20:20.*952*Z | 10km E of Bridgeport, California | Magnitude: 0.9`
 
 # Future Optimizations
