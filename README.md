@@ -8,12 +8,16 @@
 -f : location of the file to output the results to. otherwise, prints to terminal
 
 # Instructions
-0. (optional): build the jar file
+0. (optional): build the jar file (NOTE: a pre-built jar is available to use in the 'lib' dir)
+
 *mvn package*
 
 1. execute the jar and output to terminal
+
 *java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson*
+
 1a. execute the jar and output to file named out.csv
+
 *java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson -f out.csv*
 
 # Limitations
