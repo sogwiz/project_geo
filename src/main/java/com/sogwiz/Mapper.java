@@ -1,6 +1,7 @@
 package com.sogwiz;
 
-import java.io.PrintWriter;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.Collections;
 
 import com.google.gson.Gson;
@@ -45,10 +46,11 @@ public class Mapper {
         //this ends up calling the toString() on each Feature object
         //Feature.toString() contains the formatting logic
         if(outFile!=null){
-            PrintWriter out = new PrintWriter(outFile);
+            FileOutputStream out = new FileOutputStream(outFile);
+            PrintStream printOutput = new PrintStream(out);
             logger.info("Writing to file : " + outFile);
             for(Feature feature : featureCollection.features){
-                out.println(feature.toString());
+                printOutput.println(feature.toString());
             }
         }else{
             featureCollection.features.forEach(System.out::println);
