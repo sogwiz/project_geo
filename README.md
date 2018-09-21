@@ -36,6 +36,7 @@ Parameter | Purpose
 * if the milliseconds portion of the timestamp string is exactly 0, then no digits are printed out. Please see example
 
 `2018-09-21T20:01:09Z | 18km NW of Tehachapi, CA | Magnitude: 1.4`
+
 `2018-09-19T00:20:20.952Z | 10km E of Bridgeport, California | Magnitude: 0.9`
 
 
