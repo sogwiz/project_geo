@@ -9,15 +9,15 @@ Parameter | Purpose
 # Instructions
 0. (optional): build the jar file (NOTE: a pre-built jar is available to use in the 'lib' dir)
 
-*mvn package*
+`mvn package`
 
 * __execute the jar and output to terminal__
 
-*java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson*
+`java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson`
 
 * __execute the jar and output to file named out.csv__
 
-*java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson -f out.csv*
+`java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson -f out.csv`
 
 # Info
 *Data model: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php*
