@@ -33,8 +33,11 @@ Parameter | Purpose
 
 `2018-09-19T00:20:20.*952*Z | 10km E of Bridgeport, California | Magnitude: 0.9`
 
+* Requires Java 1.8
+
 # Future Optimizations
 1. add option to load from a local file instead of going to a URL each time
 2. add option to modify the chronological order to either ascending or descending
 3. add test cases and comments (compare FeatureCollection metadata count with the actual list of Features)
 4. add debug logging to print summary stats
+5. docker container for execution (this could be overkill)
