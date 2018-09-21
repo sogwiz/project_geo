@@ -12,11 +12,11 @@
 
 *mvn package*
 
-1. execute the jar and output to terminal
+* execute the jar and output to terminal
 
 *java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson*
 
-1a. execute the jar and output to file named out.csv
+* execute the jar and output to file named out.csv
 
 *java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson -f out.csv*
 
