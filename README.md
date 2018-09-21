@@ -20,6 +20,10 @@ Parameter | Purpose
 `java -jar target/com.sogwiz.apl_artifact-1.0-SNAPSHOT-jar-with-dependencies.jar -url https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson -f out.csv`
 
 # Info
+* GeoRunner.java is the entry point. It calls Mapper.java. Mapper uses the data model POJOs defined in the project
+
+`cmd line jar execution -> GeoRunner -> Mapper -> data models`
+
 *Data model: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php*
 
 # Limitations
