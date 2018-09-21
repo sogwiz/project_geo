@@ -1,6 +1,10 @@
 package com.sogwiz;
 
 import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.Comparator;
 import java.util.Map;
 
@@ -26,6 +30,23 @@ public class Feature {
     public String toString(){
         long millis = ((Double)properties.get("time")).longValue();
         Instant instant = Instant.ofEpochMilli(millis);
-        return instant + " | " + properties.get("place") + " | " + "Magnitude: " + properties.get("mag");
+        LocalDateTime ldt = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
+
+        OffsetDateTime odt = OffsetDateTime.now ( ZoneId.systemDefault () );
+        ZoneOffset zoneOffset = odt.getOffset ();
+
+        String dateStr = ldt.getYear() + "-" + ldt.getMonthValue() + "-" + ldt.getDayOfMonth() +
+            "T"+ ldt.getHour()+":"+padInt(ldt.getMinute())+":"+padInt(ldt.getSecond())+zoneOffset;
+
+
+        return dateStr + " | " + properties.get("place") + " | " + "Magnitude: " + properties.get("mag");
+    }
+
+    public String padInt(int value){
+        String val = String.valueOf(value);
+        if(val.length()<2){
+            return "0"+val;
+        }
+        return val;
     }
 }
